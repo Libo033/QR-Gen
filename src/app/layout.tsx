@@ -10,6 +10,7 @@ const rubik = Rubik({
 export const metadata: Metadata = {
   title: "QR Generator",
   description: "Create your QR code and keep track of it.",
+  icons: [{ rel: "icon", type: "image/ico", url: "/favicon/favicon.ico" }],
 };
 
 export default function RootLayout({
@@ -19,6 +20,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        <link rel="icon" href="/favicon.ico" sizes="any" />
+      </head>
       <body className={`${rubik.className}`}>{children}</body>
     </html>
   );
