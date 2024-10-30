@@ -13,7 +13,7 @@ const LinkShortener = () => {
         <input
           className="border px-2 py-3 rounded-lg outline-[#ccf2ff] w-full"
           id="url-to-short"
-          placeholder="Alias for your website"
+          placeholder="Place your URL here"
           type="text"
         />
       </div>
