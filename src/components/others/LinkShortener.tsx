@@ -2,36 +2,35 @@ import React from "react";
 
 const LinkShortener = () => {
   return (
-    <div className="w-full pt-6 md:w-fit">
-      <div className="flex flex-col gap-1 w-full">
-        <label className="font-medium" htmlFor="qr-searcher">
+    <div className="w-full pt-6 p-3 border rounded-lg shadow-lg md:w-fit">
+      <div className="text-3xl underline font-semibold text-center">
+        <p>Short your URL</p>
+      </div>
+      <div className="flex flex-col gap-1 w-full pt-5">
+        <label className="font-medium" htmlFor="url-to-short">
           URL
         </label>
-        <div className="flex gap-2">
-          <input
-            className="border px-2 py-3 rounded-lg outline-[var(--background)] w-full md:w-96"
-            id="qr-searcher"
-            placeholder="Place your URL here"
-            type="text"
-          />
-        </div>
+        <input
+          className="border px-2 py-3 rounded-lg outline-[var(--background)] w-full md:w-96"
+          id="url-to-short"
+          placeholder="Alias for your website"
+          type="text"
+        />
       </div>
       <div className="flex flex-col gap-1 w-full pt-2">
-        <label className="font-medium" htmlFor="qr-searcher">
+        <label className="font-medium" htmlFor="url-alias">
           Alias
         </label>
-        <div className="flex gap-2">
-          <input
-            className="border px-2 py-3 rounded-lg outline-[var(--background)] w-full md:w-96"
-            id="qr-searcher"
-            placeholder="Alias for your website"
-            type="text"
-          />
-        </div>
+        <input
+          className="border px-2 py-3 rounded-lg outline-[var(--background)] w-full md:w-96"
+          id="url-alias"
+          placeholder="Alias for your website"
+          type="text"
+        />
       </div>
       <div className="flex flex-col gap-1 w-full pt-2">
-        <button className="border border-[var(--background)] px-4 py-3 rounded-lg duration-150 hover:shadow-lg">
-          SEARCH
+        <button className="border border-[var(--background)] px-4 py-3 rounded-lg duration-150 hover:shadow-md">
+          CREATE URL
         </button>
       </div>
     </div>
