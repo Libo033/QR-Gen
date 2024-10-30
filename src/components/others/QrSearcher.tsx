@@ -2,7 +2,7 @@ import React from "react";
 
 const QrSearcher = () => {
   return (
-    <div className="w-full pt-6 p-3 border rounded-lg shadow-lg md:w-fit">
+    <div className="w-full pt-6 p-3 border rounded-lg shadow-xl bg-white md:w-fit">
       <div className="text-3xl underline font-semibold text-center">
         <p>Keep track</p>
       </div>
