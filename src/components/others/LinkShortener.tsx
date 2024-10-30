@@ -2,8 +2,8 @@ import React from "react";
 
 const LinkShortener = () => {
   return (
-    <div className="w-full pt-6 p-3 border rounded-lg shadow-xl bg-white md:w-fit">
-      <div className="text-3xl underline font-semibold text-center">
+    <div className="w-full pt-6 p-3 border rounded-lg shadow-xl bg-white md:w-10/12 md:mx-auto lg:w-3/6 ">
+      <div className="text-3xl underline decoration-[#0099cc] font-semibold text-center">
         <p>Short your URL</p>
       </div>
       <div className="flex flex-col gap-1 w-full pt-5">
@@ -11,7 +11,7 @@ const LinkShortener = () => {
           URL
         </label>
         <input
-          className="border px-2 py-3 rounded-lg outline-[var(--background)] w-full md:w-96"
+          className="border px-2 py-3 rounded-lg outline-[#ccf2ff] w-full"
           id="url-to-short"
           placeholder="Alias for your website"
           type="text"
@@ -22,7 +22,7 @@ const LinkShortener = () => {
           Alias
         </label>
         <input
-          className="border px-2 py-3 rounded-lg outline-[var(--background)] w-full md:w-96"
+          className="border px-2 py-3 rounded-lg outline-[#ccf2ff] w-full"
           id="url-alias"
           placeholder="Alias for your website"
           type="text"
