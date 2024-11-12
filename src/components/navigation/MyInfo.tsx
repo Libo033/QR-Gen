@@ -1,31 +1,10 @@
 "use client";
-import { useInView, animated } from "@react-spring/web";
 import Image from "next/image";
 import React from "react";
 
 const MyInfo = () => {
-  const [ref, springs] = useInView(
-    () => ({
-      from: {
-        opacity: 0,
-        y: 60,
-      },
-      to: {
-        opacity: 1,
-        y: 0,
-      },
-    }),
-    {
-      rootMargin: "-10% 0%",
-    }
-  );
-
   return (
-    <animated.div
-      ref={ref}
-      style={springs}
-      className="w-full pt-6 p-3 border rounded-lg shadow-xl bg-white md:w-10/12 md:mx-auto lg:w-3/6"
-    >
+    <div className="w-full pt-6 p-3 border rounded-lg shadow-xl bg-white md:w-10/12 md:mx-auto lg:w-3/6">
       <div className="text-3xl underline decoration-[#0099cc] font-semibold text-center">
         <p>Contact Me</p>
       </div>
@@ -67,7 +46,7 @@ const MyInfo = () => {
           Visit my portfolio
         </a>
       </div>
-    </animated.div>
+    </div>
   );
 };
 
