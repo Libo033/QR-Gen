@@ -1,10 +1,16 @@
 "use client";
+import { motion } from "motion/react";
 import Image from "next/image";
 import React from "react";
 
 const MyInfo = () => {
   return (
-    <div className="w-full pt-6 p-3 border rounded-lg shadow-xl bg-white md:w-10/12 md:mx-auto lg:w-3/6">
+    <motion.div
+      initial={{ opacity: 0, translateX: "300px" }}
+      animate={{ opacity: 1, translateX: "0px", transition: { duration: 0.3 } }}
+      exit={{ opacity: 1, translateX: "0px" }}
+      className="w-full pt-6 p-3 border rounded-lg shadow-xl bg-white md:w-10/12 md:mx-auto lg:w-3/6"
+    >
       <div className="text-3xl underline decoration-[#0099cc] font-semibold text-center">
         <p>Contact Me</p>
       </div>
@@ -46,7 +52,7 @@ const MyInfo = () => {
           Visit my portfolio
         </a>
       </div>
-    </div>
+    </motion.div>
   );
 };
 
